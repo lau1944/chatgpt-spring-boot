@@ -36,11 +36,11 @@ To call the API
 curl -X POST http://localhost:8080/app/chat?text=?text=your text&mid=yourmid&cid=yourcid
 ```
 
-There are three query parameters you can pass.
+There are three query parameters you can use.
 
-`text` (required): Your prompts.
-`mid`: the message id you want to respond to.
-`cid`: conversation id (session id).
+`text` (required): Your prompts. <br></br>
+`mid`: the message id you want to respond to. <br></br>
+`cid`: conversation id (session id). <br></br>
 
 Response sample
 ```json
