@@ -10,7 +10,7 @@ Built in Chat API, web socket, context management
 
 Clone the project to your local machine
 ```
-git clone 
+git clone project_url
 ```
 
 Open `application.properties` file, set up your own configuration
