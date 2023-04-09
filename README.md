@@ -1,8 +1,10 @@
 <h1 style="text-align: center; color: green; -webkit-animation: rainbow 5s infinite; -moz-animation: rainbow 5s infinite; -o-animation: rainbow 5s infinite; animation: rainbow 5s infinite;">ChatGPT Spring</h1>
 
-## ChatGPT spring boot application
+## ChatGPT spring boot application 
 
-Built in Chat API, web socket, context management.
+gpt3, gpt4 supported.
+
+Built in Chat API, web socket, context management
 
 ### How to use
 
