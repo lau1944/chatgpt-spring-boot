@@ -2,6 +2,7 @@ package com.vau.studio.chat.server.chatgpt.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Value;
+import org.json.JSONObject;
 
 import java.io.Serializable;
 
@@ -20,4 +21,13 @@ public class UserMessage implements Serializable {
      * Conversation session id
      */
     private String conversationId;
+
+    @Override
+    public String toString() {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("text", text);
+        jsonObject.put("messageId", messageId);
+        jsonObject.put("conversationId", conversationId);
+        return jsonObject.toString();
+    }
 }

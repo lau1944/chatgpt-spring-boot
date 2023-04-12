@@ -49,11 +49,24 @@ Response sample
 {
     "text": "Sure, what do you wonder about? I'm here to help you find answers to your questions or provide assistance in any way I can.",
     "messageId": "b095773b-e207-4cca-a6ee-14cb417c3c02",
-    "parentMessageId": "3693b64f-33f0-441a-9627-927f7c0cccaa",
     "conversationId": "e0c9fe58-bd2d-4f95-a431-e95955b2661c"
 }
 ```
 
-### Future work
+### Connect with web socket 
 
-Web socket support.
+```shell
+ws://localhost:8080/chat
+```
+
+To send stream to server, the request data format is in json string
+
+```json
+{
+  "text": "hello world",
+  "mid": "adoasjdowadasdasdasdas",
+  "cid": "sdjaodjoasjokdaskdkaskdasp"
+}
+```
+
+Response format is the same as REST API.

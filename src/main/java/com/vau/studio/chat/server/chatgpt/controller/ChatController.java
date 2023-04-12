@@ -18,13 +18,13 @@ public class ChatController {
     private ChatService chatService;
 
     @PostMapping("/chat")
-    public ResponseEntity<ChatMessage> getChatMessage(
+    public ResponseEntity<UserMessage> getChatMessage(
             @RequestParam(name = "text") String text,
             @RequestParam(name = "mid", required = false) String mid,
             @RequestParam(name = "cid", required = false) String cid
     ) {
         UserMessage userMessage = new UserMessage(text, mid, cid);
-        ChatMessage res = chatService.getGptMessage(userMessage);
+        UserMessage res = chatService.getGptMessage(userMessage);
         return ResponseEntity.ok(res);
     }
 

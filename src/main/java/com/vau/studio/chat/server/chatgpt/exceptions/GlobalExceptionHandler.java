@@ -24,4 +24,10 @@ class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         logger.error(ex.getMessage());
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler(GptMessageException.class)
+    public ResponseEntity<Object> handleGptMessageException(GptMessageException ex) {
+        logger.error(ex.getMessage());
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }
